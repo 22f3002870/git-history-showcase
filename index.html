@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Time Travel Investigation</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #64748b;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+        }
+        body {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, var(--primary), #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .result-box {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin: 2rem 0;
+            border: 1px solid #e2e8f0;
+        }
+        .label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+        .hash {
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .description {
+            color: var(--secondary);
+            margin-bottom: 2rem;
+        }
+        footer {
+            border-top: 1px solid #e2e8f0;
+            padding-top: 1.5rem;
+            font-size: 0.875rem;
+            color: var(--secondary);
+        }
+        .email {
+            font-weight: 500;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Git Time Travel</h1>
+        <p class="description">Investigation into the production incident regarding the timeout configuration change.</p>
+        
+        <div class="result-box">
+            <span class="label">Parent Commit Short Hash</span>
+            <div class="hash">9f78041</div>
+        </div>
+
+        <footer>
+            <p>Contact Developer:<br>
+            <span class="email"><!--email_off-->22f3002870@ds.study.iitm.ac.in<!--/email_off--></span></p>
+        </footer>
+    </div>
+</body>
+</html>
